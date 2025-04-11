@@ -1,0 +1,22 @@
+<table border="1" cellpadding="10">
+    <thead>
+    <tr>
+        <th>Data</th>
+        <th>Pontos</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>10/04/2025</td>
+        <td>120</td>
+    </tr>
+    <tr>
+        <td>09/04/2025</td>
+        <td>100</td>
+    </tr>
+    <tr>
+        <td>08/04/2025</td>
+        <td>80</td>
+    </tr>
+    </tbody>
+</table>

@@ -1,52 +1,32 @@
 <?php
+session_start();
 
-
-require_once '../control/control-jogada.php';
+require_once '../model/Jogada.php';
+require_once '../model/conexao.php';
+// Execução do jogo
+$conexao = new Conexao();
+$jogo = new Jogada($conexao->getPdo());
+$jogo->processarJogada();
 ?>
 
+
+<!-- Interface HTML -->
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jogo da Forca - Simples</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-        }
-        #palavra {
-            font-size: 24px;
-            letter-spacing: 5px;
-            margin-bottom: 10px;
-        }
-    </style>
+    <title>ECO-HERÓI</title>
 </head>
 <body>
-    <h1>Jogo da Forca - PHP</h1>
-
-
-    <p>Qual é o local onde devemos jogar o lixo?</p>
-
-
-    <div id="palavra"><?php echo $_SESSION['palavra_exibida']; ?></div>
-
-    <p>Vidas restantes: <?php echo $_SESSION['vidas']; ?></p>
-
-    <p>Letras tentadas: <?php echo implode(", ", $_SESSION['letras_tentadas']); ?></p>
-
-    <?php if (isset($mensagem)): ?>
-        <p><?php echo $mensagem; ?></p>
-    <?php endif; ?>
-
-    <?php if ($_SESSION['vidas'] > 0 && str_contains($_SESSION['palavra_exibida'], "_")): ?>
-        <form method="POST">
-            <label for="letra">Digite uma letra:</label>
-            <input type="text" id="letra" name="letra" maxlength="1" required>
-            <button type="submit">Verificar</button>
-        </form>
-    <?php endif; ?>
-
-    <p><a href="forca.php">Reiniciar o jogo</a></p>
+<h1>ECO-HERÓI</h1>
+<?php $jogo->exibirEstado(); ?>
+<form method="POST">
+    <label>Digite uma letra: <input type="text" name="letra" maxlength="1"></label>
+    <button type="submit">Enviar Letra</button>
+</form>
+<form method="POST">
+    <label>Ou tente a palavra completa: <input type="text" name="palavra"></label>
+    <button type="submit">Enviar Palavra</button>
+</form>
 </body>
 </html>
