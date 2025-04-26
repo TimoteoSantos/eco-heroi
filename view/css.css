@@ -1,11 +1,209 @@
 
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-        }
-        #palavra {
-            font-size: 24px;
-            letter-spacing: 5px;
-            margin-bottom: 10px;
-        }
-   
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+#palavra {
+    font-size: 24px;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+}
+
+
+
+.corpo{
+
+    margin:55px;
+    width: 55%;
+    
+}
+
+.arvore {
+
+    height: 300px;
+    width: 400px;
+ 
+    float: left;
+
+
+}
+
+.pergunta {
+
+    height: 300px;
+    width: 400px;
+    background-color: rgb(232, 232, 241);
+    float: right;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+
+
+}
+
+.resposta{
+
+
+    height: 120px;
+    width: 880px;
+    background-color:;
+    border-radius: 15px;
+    padding: 15px;
+    clear:both;
+    border-style: dashed;
+
+}
+
+.titulo {
+
+    margin:55px;
+}
+
+.pergunta2{
+
+    background-color: rgb(8, 121, 23);
+    border-radius: 15px;
+    padding: 8px;
+    color: aliceblue;
+}
+
+.palavra, .informacao {
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    padding: 8px;
+    color: rgb(0, 2, 3);
+    margin-top: 15px;
+    font-size: 20px !important;
+    text-align: center;
+}
+
+.informacao {
+
+   text-align: left;
+   height: 80px;
+   font-size: 16px !important;
+}
+
+.homeleft {
+
+    float: left;
+    width: 570px;
+    background-image:url('img/fundo.png');
+    height: 600px;
+    padding: 15px;
+}
+
+.homeright {
+
+    float: left;
+    width: 500px;
+    background-color: rgb(17, 77, 6);
+    height: 600px;
+    padding: 30px;
+    color: aliceblue;
+}
+
+a {
+
+    color: aliceblue !important;
+}
+
+.historico {
+
+    color: black !important;
+}
+
+.divbotom {
+
+    position: absolute;
+    bottom: 0;
+    
+
+}
+
+.gestor {
+
+    width: 800px !important;
+    margin: 20px !important;
+    border-style: dashed;
+    border-radius: 15px;
+    padding: 10px;
+    background-color:#006400;
+    color:aliceblue;
+    text-align: left;
+}
+
+.historico2 {
+
+    margin: 50px;
+    width: 550px;
+}
+
+.corpo2 {
+
+    margin: 50px;
+    width: 550px;
+    background-color: #006400;
+    padding: 15px;
+    border-radius: 15px;
+    border-style: dotted;
+    color: aliceblue;
+
+}
+
+.login {
+
+    margin: 50px;
+    width: 450px;
+    background-color: #006400;
+    padding: 15px;
+    border-radius: 15px;
+    border-style: dotted;
+    color: aliceblue;
+
+}
+
+.largura {
+
+    width: 250px;
+    background-color: yellow !important;
+
+}
+
+.largura2 {
+
+
+    width: 550px !important;
+
+}
+
+
+
+
+.largura3 {
+
+
+    width: 250px !important;
+
+}
+
+.resumo {
+
+    width: 450px !important;
+    background-color: #006400;
+    margin: 50px;
+    border-radius: 15px;
+
+}
+
+.resumo2 {
+
+    padding: 15px !important;
+    font-size: 22px;
+}
+
+.espaco {
+
+    margin: 15px;
+    color:black;
+}

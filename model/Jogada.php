@@ -15,7 +15,7 @@ $pergunta = $this->sortearPergunta();
 $_SESSION['pergunta'] = $pergunta['pergunta'];
 $_SESSION['palavra'] = strtoupper($pergunta['resposta']);
 $_SESSION['palavra_exibida'] = str_repeat("_", strlen($_SESSION['palavra']));
-$_SESSION['vidas'] = 6;
+$_SESSION['vidas'] = 10;
 $_SESSION['letras_tentadas'] = [];
 }
 }

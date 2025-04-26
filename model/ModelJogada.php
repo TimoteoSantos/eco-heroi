@@ -2,8 +2,6 @@
 require_once 'ModelPalavra.php';
 require_once 'DaoPergunta.php';
 
-
-
 class  Jogada
 {
     private $palavra;
